@@ -1,0 +1,10 @@
+{
+  "name": "Inventario de Activos y Resguardos",
+  "description": "Sistema completo para control de inventario de equipos, asignación de resguardos, ubicaciones por edificio, escaneo de códigos QR y alertas de stock bajo.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
