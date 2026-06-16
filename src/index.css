@@ -6,16 +6,58 @@
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
 }
 
-/* Custom table & visual utilities */
-.glass-panel {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(229, 231, 235, 0.5);
+/* Custom premium frosted glass utilities */
+.frosted-glass {
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.dark-glass-panel {
-  background: rgba(17, 24, 39, 0.95);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(55, 65, 81, 0.5);
+.frosted-glass-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.frosted-glass-hover:hover {
+  background: rgba(15, 23, 42, 0.55);
+  border-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5), 0 0 15px rgba(249, 115, 22, 0.05);
+}
+
+.frosted-card-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.frosted-input {
+  background: rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+  transition: all 0.2s ease;
+}
+
+.frosted-input:focus {
+  background: rgba(15, 23, 42, 0.55);
+  border-color: rgba(249, 115, 22, 0.6);
+  outline: none;
+  box-shadow: 0 0 12px rgba(249, 115, 22, 0.15);
+}
+
+/* Scrollbars for premium appearance */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 

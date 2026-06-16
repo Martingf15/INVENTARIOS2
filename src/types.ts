@@ -20,6 +20,8 @@ export interface Producto {
   created_at?: string;
   // Join helper field for display
   resguardo_nombre?: string;
+  resguardo_correo?: string;
+  resguardo_telefono?: string;
 }
 
 export interface DbStatus {
